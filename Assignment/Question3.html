@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question 3</title>
+    <script>
+        var array = [2, 4, 9, 0, 16, 24];
+
+        var sorted = array.slice().sort(function(a, b) {
+        return a - b;
+        });
+
+        var smallest = sorted[0],                      
+            secondSmallest = sorted[1],                
+            secondLargest = sorted[sorted.length - 2], 
+            largest  = sorted[sorted.length - 1];
+        </script>
+</head>
+<body>
+    <h3>Second Smallest and Second Largest</h3>
+    <script>
+        document.write('Array is: '+array+"<br>");
+      
+        document.writeln('<br><br> Second Smallest: ' + secondSmallest);
+        document.writeln('<br> Second Largest: ' + secondLargest);
+        </script>
+</body>
+</html>

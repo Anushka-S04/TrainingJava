@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet'>
+    <style>
+        .body h1{
+            text-transform: uppercase;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 240%;
+            letter-spacing: 10px;
+            text-shadow: 2px 2px 10px #24aa2b;
+            color:black;
+            text-align: center;
+            float: center;
+        }
+        .form{
+            width: 60%;
+            padding: 20px;  
+            margin: auto;
+        }
+        body{
+          height: 900px;
+          background:linear-gradient(to bottom,#b3ffab,#12fff7);
+        }
+
+        .imgcontainer {
+          text-align: center;
+          margin: 24px 0 12px 0;
+        }
+        img.avatar {
+          width: 25%;
+          border-radius: 50%;
+        }
+
+
+        
+    </style>
+
+  
+</head>
+<body>
+
+  <div class="header">
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" 
+            style="color: white; padding-left: 30px; font-family:'Kalam'; font-size: xx-large;"
+            >Consult</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                    <a class="nav-link" href="perks.html">Perks</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="OurExperts.html">Experts</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="offers.html">Offers</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="text" placeholder="Search">
+                  <button class="btn btn-primary" type="button">Search</button>
+                </form>
+            </div>
+        </div>
+      </nav>
+    </header>
+  </div>
+
+    <div class="body">
+<br>
+      <h1>Login</h1>
+      <br>
+        <div class="form">
+          <div class="imgcontainer">
+            <img src="Images/loginAvatar.png" alt="Avatar" class="avatar">
+            </div>
+            <form class="shadow-lg p-3 mb-5 bg-body rounded">
+
+                <div class="row mb-3">
+                    <div class="col">
+                      <label for="inputZip" class="form-label">First Name</label>
+                      <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                    </div>
+                    <div class="col">
+                      <label for="inputZip" class="form-label">Last Name</label>
+                      <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                    </div>
+                </div>
+
+                <div class="row mg-3">
+                    <div class="col-sm-7">
+                        <label for="inputCity" class="form-label">City</label>
+                        <input type="text" class="form-control" placeholder="City" aria-label="City">
+                    </div>
+                    <div class="col-sm">
+                        <label for="inputState" class="form-label">State</label>
+                        <select id="inputState" class="form-select">
+                          <option selected>Choose</option>
+                          <option>AP</option>
+                          <option>UP</option>
+                          <option>Punjab</option>
+                          <option>Delhi</option>
+                          <option>Maharashtra</option>
+                        </select>
+                      </div>
+                    <div class="col-sm">
+                        <label for="inputZip" class="form-label">Zip</label>
+                        <input type="text" class="form-control" placeholder="Zip" aria-label="Zip">
+                    </div>
+                  </div>
+                  <br>
+
+                <div class="row mb-3">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                  <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3">
+                  </div>
+                </div>
+                
+                <div class="row mb-3">
+                  <div class="col-sm-10 offset-sm-2">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck1">
+                      <label class="form-check-label" for="gridCheck1">
+                        Check 
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign in</button>
+              </form>
+        </div>
+         
+    </div>
+
+
+    
+</body>
+</html>

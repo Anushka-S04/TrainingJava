@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Question 4</title>
+    </head>
+    
+<body>
+    <!-- <div>
+        
+    <h1>Clock</h1>
+    <button style="height: 40px;" id="but" onclick="stop()">Stop</button>
+</div> -->
+    <div>
+    <script>
+        var myVar = setInterval(myTimer, 1000);
+        
+        function myTimer() {
+            
+        var d = new Date();
+        var t = d.toLocaleTimeString();
+        document.writeln("<br>",t);
+        }
+    
+        function stop(){
+            clearInterval(t);
+            console.log("Done");
+        }
+    
+    </script>
+    </div>
+</body>
+</html>

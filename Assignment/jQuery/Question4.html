@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 4</title>
+    <!-- Attach a function to the focus event. The focus event occurs (display a message regarding the text field) when the <input> field gets focus.  -->
+ 
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <style>
+        body{
+            margin-left: 50px;
+        }
+        span {
+            display: none;
+            }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("input").focus(function() {
+                $(this).next("span").css("display", "inline").fadeOut(3000);
+            });
+        });
+    </script>
+</head>
+<body>
+    <h2 style="text-align: center;">Q4 - Displaying Message on Focus event.</h2>
+    <br>
+    <br>
+    <p>First Name:  <input> <span><i>Write only first name.</i></span></p>
+    <p>Last Name:  <input> <span><i>Write only last name.</i></span></p> 
+    
+</body>
+</html>

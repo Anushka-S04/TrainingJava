@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 5</title>
+    <style>
+        form{
+            text-align: center;
+            background-color: cornsilk;
+            margin: 0 400px;
+        }
+       
+    </style>
+    <script>
+        function getFormvalue(){
+            var x= document.getElementById("form1");
+            for(var i=0; i<x.length;i++){
+                if(x.elements[i].value!='Submit'){
+                    document.write(x.elements[i].value+" ");
+                }
+            }
+        }
+    </script>
+    <style>
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" onsubmit="getFormvalue()">
+        <h1 style="text-align: center;">Form</h1>
+        <br>
+        First name: <input type="text" name="fname" value="David"><br>
+        <br>
+        Last name: <input type="text" name="lname" value="Beckham"><br>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
